@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: analyzr-backend
+    runtime: python
+    repo: https://github.com/yourusername/analyzr
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn main:app --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT --workers 1 --timeout 300
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: OLLAMA_HOST
+        value: http://localhost:11434
+      - key: OLLAMA_MODEL
+        value: mistral
+      - key: MAX_UPLOAD_SIZE_MB
+        value: "100"
+      - key: UPLOAD_DIR
+        value: ./uploads
+      - key: SESSION_DIR
+        value: ./sessions
+      - key: CORS_ORIGINS
+        value: https://your-frontend.vercel.app

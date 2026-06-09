@@ -1,0 +1,13 @@
+Date,Sales,Quantity,Region,Category
+2023-01-01,150.50,15,North,Electronics
+2023-01-02,200.00,20,South,Furniture
+2023-01-03,50.25,5,East,Office Supplies
+2023-01-04,300.75,30,West,Electronics
+2023-01-05,120.00,12,North,Furniture
+2023-01-06,450.00,45,South,Office Supplies
+2023-01-07,80.50,8,East,Electronics
+2023-01-08,500.00,50,West,Furniture
+2023-01-09,10.00,1,North,Electronics
+2023-01-10,155.00,16,South,Furniture
+2024-01-01,1000.00,100,North,Electronics
+2024-01-02,50.00,5,South,Furniture

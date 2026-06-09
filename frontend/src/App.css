@@ -1,0 +1,82 @@
+/* Clean Light Theme UI Styles */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #f3e8ff;
+  color: #7c3aed;
+  border-radius: 6px;
+  border: 1px solid #d8b4fe;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.badge.purple {
+  background: #f3e8ff;
+  color: #7c3aed;
+  border-color: #d8b4fe;
+}
+
+.divider-purple {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d8b4fe, transparent);
+}
+
+/* Gradient background backgrounds for chart headers */
+.bg-gradient-purple-light {
+  background: linear-gradient(to right, rgba(243, 232, 255, 0.3), transparent);
+}
+
+/* Insight type color schemes */
+.insight-descriptive {
+  background-color: #eff6ff;
+  border-color: #3b82f6;
+  color: #0369a1;
+}
+
+.insight-diagnostic {
+  background-color: #fed7aa;
+  border-color: #f97316;
+  color: #92400e;
+}
+
+.insight-predictive {
+  background-color: #dcfce7;
+  border-color: #22c55e;
+  color: #15803d;
+}
+
+.insight-business {
+  background-color: #ffe4e6;
+  border-color: #f43f5e;
+  color: #be123c;
+}
+
+/* Smooth animations */
+@keyframes slideInFade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: slideInFade 0.2s ease-out;
+}
+
+/* Hover effect for interactive cards */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
